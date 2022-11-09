@@ -1,0 +1,20 @@
+{
+  "name": "e-commerce-product-page",
+  "version": "1.0.0",
+  "description": "Proyecto FrontEnd E-commerce",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "author": "Kiss Lautaro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.56.0"
+  }
+}

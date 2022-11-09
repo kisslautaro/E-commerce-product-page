@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="build/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <main class="main-container">
+    <header class="header">
+      <div class="header__nav">
+        <img class="header__menu" src="./build/images/icon-menu.svg" alt="Icono del menú">
+      <img class="header__logo" src="./build/images/logo.svg" alt="Imagen del logo">
+
+      <nav class="navbar">
+        <ul class="navbar__items">
+          <li> <a class="navbar__link" href="#" >Collections</a></li>
+          <li> <a class="navbar__link" href="#" >Men</a></li>
+          <li> <a class="navbar__link" href="#" >Women</a></li>
+          <li> <a class="navbar__link" href="#" >About</a></li>
+          <li> <a class="navbar__link" href="#" >Contact</a></li>
+        </ul>
+      </nav>
+
+      </div>
+    
+
+      <!-- Inicio modal navbar -->
+      <div class="modal-navbar__background">
+        <nav class="modal-navbar">
+          <img class="modal-navbar__close-icon" src="./build/images/icon-close.svg" alt="icono Cerrar">
+          <ul class="modal-navbar__items">
+
+            <li> <a class="modal-navbar__link" href="#" >Collections</a></li>
+            <li> <a class="modal-navbar__link" href="#" >Men</a></li>
+            <li> <a class="modal-navbar__link" href="#" >Women</a></li>
+            <li> <a class="modal-navbar__link" href="#" >About</a></li>
+            <li> <a class="modal-navbar__link" href="#" >Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Fin modal navbar -->
+      <div class="header__cart-avatar">
+        <div class="header__cart">
+          <div class="header__cart--notification">0</div>
+          <img class="cartBtn" src="./build/images/icon-cart.svg" alt="Icono del carrito">
+        </div>
+        <img class="header__avatar" src="./build/images/image-avatar.png" alt="Imagen del perfil">
+      </div>
+    </header>
+
+    <section class="content">
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__previus" src="./build/images/icon-previous.svg" alt="Icono antes">
+          <img class="gallery__next" src="./build/images/icon-next.svg" alt="Icono siguiente">
+        </div>
+        <div class="gallery__thumnails">
+          <img id="1" class="gallery__thumnail" src="./build/images/image-product-1-thumbnail.jpg" alt="thumnail">
+          <img id="2" class="gallery__thumnail" src="./build/images/image-product-2-thumbnail.jpg" alt="thumnail">
+          <img id="3" class="gallery__thumnail" src="./build/images/image-product-3-thumbnail.jpg" alt="thumnail">
+          <img id="4" class="gallery__thumnail" src="./build/images/image-product-4-thumbnail.jpg" alt="thumnail">
+        </div>
+      </article>
+      <article class="details">
+        <h2 class="details__company">Sneaker Company</h2>
+        <h2 class="details__title">Fall Limited Edition Sneaker</h2>
+        <p class="details__description">
+          These low-profille sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'all withstand everything the weather can offer
+        </p>
+        <div class="details__prices">
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+          <p class="details__before">$250.00</p>
+        </div>
+        <div class="details__product-quantity">
+          <div class="input">
+            <img class="input__minus" src="./build/images/icon-minus.svg" alt="minus">
+            <input class="input__number" type="text" value="0">
+            <img class="input__plus" src="./build/images/icon-plus.svg" alt="plus">
+          </div>
+          <button class="details__button"><img src="./build/images/icon-cart-white.svg" alt="cart"> Add to cart</button>
+        </div>
+        
+      </article>
+    </section>
+
+    <!-- Beginning modal cart -->
+    <div class="cart-modal">
+      <p class="cart-modal__title">Cart</p>
+      <div class="cart-modal__chekout-container">
+        <div class="cart-modal__details-container">
+          <img class="cart-modal__image" src="./build/images/image-product-1-thumbnail.jpg" alt="product image">
+          <div class="">
+            <p class="cart-modal__product">Autumn Limited Edition..</p>
+            <p class="cart-modal__price">$125.00 x3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete" src="./build/images/icon-delete.svg" alt="delete icon">
+        </div>
+        <button class="cart-modal__checkout">Checkout</button>
+      </div>
+    </div>
+
+    <!-- Finally modal cart -->
+
+
+
+  </main>
+      <!-- Beginning modal galley -->
+      <div class="modal-gallery__background">
+        <article class="modal-gallery">
+          <div class="modal-gallery__close-container">
+            <img class="modal-gallery__close" src="./build/images/icon-close.svg" alt="icon close">
+          </div>
+          <div class="modal-gallery__image-container">
+            <img class="modal-gallery__previus" src="./build/images/icon-previous.svg" alt="Icono antes">
+            <img class="modal-gallery__next" src="./build/images/icon-next.svg" alt="Icono siguiente">
+          </div>
+          <div class="modal-gallery__thumnails">
+            <img id="m1" class="modal-gallery__thumnail" src="./build/images/image-product-1-thumbnail.jpg" alt="thumnail">
+            <img id="m2" class="modal-gallery__thumnail" src="./build/images/image-product-2-thumbnail.jpg" alt="thumnail">
+            <img id="m3" class="modal-gallery__thumnail" src="./build/images/image-product-3-thumbnail.jpg" alt="thumnail">
+            <img id="m4" class="modal-gallery__thumnail" src="./build/images/image-product-4-thumbnail.jpg" alt="thumnail">
+          </div>
+        </article>
+      </div>
+      <!-- Finally modal gallery -->
+  <script src="build/js/main.js" ></script>
+</body>
+</html>
